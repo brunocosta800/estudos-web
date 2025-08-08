@@ -31,6 +31,4 @@ console.log(num3 + num4);
 console.log(num1 + num2 * num3); // Segue a precedência de expressões numéricas
 
 let contador = 2;
-contador **= 10;
-contador **= 10;
-console.log(contador);
+
