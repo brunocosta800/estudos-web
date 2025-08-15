@@ -1,12 +1,12 @@
-const numero = prompt('Insira um número:');
+const numero = Number(prompt('Insira um número:'));
 const numeroTitulo = document.getElementById("numero-titulo");
-numeroTitulo.innerText(numero);
+const texto = document.getElementById("texto");
 
-parseInt(numero);
+numeroTitulo.innerHTML = numero;
 
-console.log(`Raiz quadrada: ${Math.sqrt(numero)}`);
-console.log(`Raiz quadrada: ${Number.isInteger(numero)}`);
-console.log(`Raiz quadrada: ${Number.isNaN(numero)}`);
-console.log(`Raiz quadrada: ${Math.floor(numero)}`);
-console.log(`Raiz quadrada: ${Math.ceil(numero)}`);
-console.log(`Raiz quadrada: ${numero.toFixed(2)}`);
+texto.innerHTML = `<p>Raiz quadrada: ${Math.sqrt(numero)}</p>` 
+texto.innerHTML += `<p>${numero} é inteiro?: ${Number.isInteger(numero)}</p>`
+texto.innerHTML += `<p>É NaN?: ${Number.isNaN(numero)}</p>`
+texto.innerHTML += `<p>Arredondado para baixo: ${Math.floor(numero)}</p>`
+texto.innerHTML += `<p>Arredondado para cima: ${Math.ceil(numero)}</p>`
+texto.innerHTML += `<p>Com duas casas decimais: ${numero.toFixed(2)}</p>`

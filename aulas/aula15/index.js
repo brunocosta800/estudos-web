@@ -10,4 +10,4 @@ console.log(num4);
 console.log(Math.max(1,2,3,4,5,6,7,8,9,10,-1,-2,-3,-4,-5,321,65,12)); // retorna o maior número de uma sequência
 console.log(Math.min(1,2,3,4,5,6,7,8,9,10,-1,-2,-3,-4,-5,321,65,12)); // retorna o menor número de uma sequência
 
-console.log(Math.random()); // gera um número aleatório entre 0 e 1
+console.log(Math.random()); // gera um número aleatório entre 0 e 1       
